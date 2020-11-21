@@ -3,9 +3,9 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-ngrx-material-starter": {
+    "sigma-control-panel-front": {
       "root": "",
-      "sourceRoot": "projects/angular-ngrx-material-starter/src",
+      "sourceRoot": "projects/sigma-control-panel-front/src",
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -19,18 +19,18 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist",
-            "index": "projects/angular-ngrx-material-starter/src/index.html",
-            "main": "projects/angular-ngrx-material-starter/src/main.ts",
-            "polyfills": "projects/angular-ngrx-material-starter/src/polyfills.ts",
-            "tsConfig": "projects/angular-ngrx-material-starter/tsconfig.app.json",
+            "index": "projects/sigma-control-panel-front/src/index.html",
+            "main": "projects/sigma-control-panel-front/src/main.ts",
+            "polyfills": "projects/sigma-control-panel-front/src/polyfills.ts",
+            "tsConfig": "projects/sigma-control-panel-front/tsconfig.app.json",
             "aot": true,
             "assets": [
-              "projects/angular-ngrx-material-starter/src/favicon.ico",
-              "projects/angular-ngrx-material-starter/src/assets"
+              "projects/sigma-control-panel-front/src/favicon.ico",
+              "projects/sigma-control-panel-front/src/assets"
             ],
             "styles": [
-              "projects/angular-ngrx-material-starter/src/styles-app-loading.scss",
-              "projects/angular-ngrx-material-starter/src/styles.scss",
+              "projects/sigma-control-panel-front/src/styles-app-loading.scss",
+              "projects/sigma-control-panel-front/src/styles.scss",
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css"
             ],
@@ -44,8 +44,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "projects/angular-ngrx-material-starter/src/environments/environment.ts",
-                  "with": "projects/angular-ngrx-material-starter/src/environments/environment.prod.ts"
+                  "replace": "projects/sigma-control-panel-front/src/environments/environment.ts",
+                  "with": "projects/sigma-control-panel-front/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -87,8 +87,8 @@
             "web": {
               "fileReplacements": [
                 {
-                  "replace": "projects/angular-ngrx-material-starter/src/environments/environment.ts",
-                  "with": "projects/angular-ngrx-material-starter/src/environments/environment.prod.ts"
+                  "replace": "projects/sigma-control-panel-front/src/environments/environment.ts",
+                  "with": "projects/sigma-control-panel-front/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": false,
@@ -133,34 +133,34 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-ngrx-material-starter:build"
+            "browserTarget": "sigma-control-panel-front:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-ngrx-material-starter:build:production"
+              "browserTarget": "sigma-control-panel-front:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-ngrx-material-starter:build"
+            "browserTarget": "sigma-control-panel-front:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/angular-ngrx-material-starter/src/test.ts",
-            "polyfills": "projects/angular-ngrx-material-starter/src/polyfills.ts",
-            "tsConfig": "projects/angular-ngrx-material-starter/tsconfig.spec.json",
-            "karmaConfig": "projects/angular-ngrx-material-starter/karma.conf.js",
+            "main": "projects/sigma-control-panel-front/src/test.ts",
+            "polyfills": "projects/sigma-control-panel-front/src/polyfills.ts",
+            "tsConfig": "projects/sigma-control-panel-front/tsconfig.spec.json",
+            "karmaConfig": "projects/sigma-control-panel-front/karma.conf.js",
             "assets": [
-              "projects/angular-ngrx-material-starter/src/favicon.ico",
-              "projects/angular-ngrx-material-starter/src/assets"
+              "projects/sigma-control-panel-front/src/favicon.ico",
+              "projects/sigma-control-panel-front/src/assets"
             ],
             "styles": [
-              "projects/angular-ngrx-material-starter/src/styles-app-loading.scss",
-              "projects/angular-ngrx-material-starter/src/styles.scss"
+              "projects/sigma-control-panel-front/src/styles-app-loading.scss",
+              "projects/sigma-control-panel-front/src/styles.scss"
             ],
             "scripts": []
           },
@@ -168,8 +168,8 @@
             "test": {
               "fileReplacements": [
                 {
-                  "replace": "projects/angular-ngrx-material-starter/src/environments/environment.ts",
-                  "with": "projects/angular-ngrx-material-starter/src/environments/environment.test.ts"
+                  "replace": "projects/sigma-control-panel-front/src/environments/environment.ts",
+                  "with": "projects/sigma-control-panel-front/src/environments/environment.test.ts"
                 }
               ]
             }
@@ -179,9 +179,9 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/angular-ngrx-material-starter/tsconfig.app.json",
-              "projects/angular-ngrx-material-starter/tsconfig.spec.json",
-              "projects/angular-ngrx-material-starter/e2e/tsconfig.json"
+              "projects/sigma-control-panel-front/tsconfig.app.json",
+              "projects/sigma-control-panel-front/tsconfig.spec.json",
+              "projects/sigma-control-panel-front/e2e/tsconfig.json"
             ],
             "exclude": ["**/node_modules/**"]
           }
@@ -189,19 +189,19 @@
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "protractorConfig": "projects/angular-ngrx-material-starter/e2e/protractor.conf.js",
-            "devServerTarget": "angular-ngrx-material-starter:serve"
+            "protractorConfig": "projects/sigma-control-panel-front/e2e/protractor.conf.js",
+            "devServerTarget": "sigma-control-panel-front:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-ngrx-material-starter:serve:production"
+              "devServerTarget": "sigma-control-panel-front:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "angular-ngrx-material-starter",
+  "defaultProject": "sigma-control-panel-front",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
