@@ -4,6 +4,8 @@
   "newProjectRoot": "projects",
   "projects": {
     "angular-ngrx-material-starter": {
+      "root": "",
+      "sourceRoot": "projects/angular-ngrx-material-starter/src",
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -11,14 +13,12 @@
           "style": "scss"
         }
       },
-      "root": "projects/angular-ngrx-material-starter",
-      "sourceRoot": "projects/angular-ngrx-material-starter/src",
       "prefix": "anms",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/custom-webpack:browser",
           "options": {
-            "outputPath": "dist/angular-ngrx-material-starter",
+            "outputPath": "dist",
             "index": "projects/angular-ngrx-material-starter/src/index.html",
             "main": "projects/angular-ngrx-material-starter/src/main.ts",
             "polyfills": "projects/angular-ngrx-material-starter/src/polyfills.ts",
@@ -30,9 +30,18 @@
             ],
             "styles": [
               "projects/angular-ngrx-material-starter/src/styles-app-loading.scss",
-              "projects/angular-ngrx-material-starter/src/styles.scss"
+              "projects/angular-ngrx-material-starter/src/styles.scss",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/@popperjs/core/dist/umd/popper.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ],
+            "customWebpackConfig": {
+              "path": "./angular.webpack.js"
+            }
           },
           "configurations": {
             "production": {
@@ -50,6 +59,50 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "bundle",
+                  "name": "polyfills",
+                  "baseline": "150kb",
+                  "maximumWarning": "50kb",
+                  "maximumError": "100kb"
+                },
+                {
+                  "type": "bundle",
+                  "name": "styles",
+                  "baseline": "280kb",
+                  "maximumWarning": "50kb",
+                  "maximumError": "100kb"
+                },
+                {
+                  "type": "bundle",
+                  "name": "main",
+                  "baseline": "1024kb",
+                  "maximumWarning": "100kb",
+                  "maximumError": "200kb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ]
+            },
+            "web": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/angular-ngrx-material-starter/src/environments/environment.ts",
+                  "with": "projects/angular-ngrx-material-starter/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": false,
+              "outputHashing": "all",
+              "sourceMap": true,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": false,
               "budgets": [
                 {
                   "type": "bundle",
@@ -152,6 +205,15 @@
     }
   },
   "defaultProject": "angular-ngrx-material-starter",
+  "schematics": {
+    "@schematics/angular:component": {
+      "prefix": "app",
+      "style": "scss"
+    },
+    "@schematics/angular:directive": {
+      "prefix": "app"
+    }
+  },
   "cli": {
     "analytics": false
   }
