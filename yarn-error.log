@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/bin/node /usr/share/yarn/bin/yarn.js add @angular-devkit/custom-webpack -D
+  /usr/bin/node /usr/share/yarn/bin/yarn.js add @popper/core -D
 
 PATH: 
   /home/edaklan/opt/apache-maven-3.6.3/bin:/home/edaklan/bin/burningwave:/home/edaklan/bin/flutter/bin:/home/edaklan/opt/apache-maven-3.6.3/bin:/home/edaklan/bin/burningwave:/home/edaklan/bin/flutter/bin:/home/edaklan/bin/google-cloud-sdk/bin:/home/edaklan/opt/apache-maven-3.6.3/bin:/home/edaklan/bin/burningwave:/home/edaklan/bin/flutter/bin:/home/edaklan/.local/bin:/home/edaklan/bin:/usr/java/jdk-11.0.5:/home/edaklan/bin/flutter/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/edaklan/.composer/vendor/bin:/var/lib/snapd/snap/bin
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.npmjs.org/@angular-devkit%2fcustom-webpack: Not found
+  Error: https://registry.npmjs.org/@popper%2fcore: Not found
       at Request.params.callback [as _callback] (/usr/share/yarn/lib/cli.js:66988:18)
       at Request.self.callback (/usr/share/yarn/lib/cli.js:140749:22)
       at Request.emit (events.js:315:20)
@@ -35,26 +35,26 @@ npm manifest:
     "scripts": {
       "postinstall": "electron-builder install-app-deps",
       "ng": "ng",
-      "start": "npm-run-all -p electron:serve  ng:serve",
-      "start:prod": "yarn run build:prod && yarn run server",
-      "build": "yarn run electron:serve-tsc && ng build --base-href ./",
-      "build:dev": "yarn run build -- -c dev",
-      "build:prod": "yarn run build -- -c production",
+      "start": "npm-run-all -p electron:serve ng:serve",
+      "build": "npm run electron:serve-tsc && ng build --base-href ./",
+      "start:prod": "npm run build:prod && npm run server",
+      "build:dev": "npm run build -- -c dev",
+      "build:prod": "npm run build -- -c production",
       "ng:serve": "ng serve",
       "electron:serve-tsc": "tsc -p tsconfig.serve.json",
-      "electron:serve": "wait-on tcp:4200 && yarn run electron:serve-tsc && npx electron . --serve",
-      "electron:local": "yarn run build:prod && npx electron .",
-      "electron:build": "yarn run build:prod && electron-builder build",
+      "electron:serve": "wait-on tcp:4200 && npm run electron:serve-tsc && npx electron . --serve",
+      "electron:local": "npm run build:prod && npx electron .",
+      "electron:build": "npm run build:prod && electron-builder build",
       "lint": "eslint --color -c .eslintrc --ext .ts .",
-      "test": "yarn run lint && ng test --configuration=test",
+      "test": "npm run lint && ng test --configuration=test",
       "watch": "ng test --configuration=test --browsers ChromeHeadless --watch --reporters dots",
       "e2e": "ng e2e",
       "e2e:ci": "ng e2e",
-      "ci": "yarn run format:test && yarn run lint && ng test --configuration=test --browsers ChromeTravisCi --code-coverage && yarn run build:prod -- --deploy-url /angular-ngrx-material-starter/ --base-href /angular-ngrx-material-starter",
+      "ci": "npm run format:test && npm run lint && ng test --configuration=test --browsers ChromeTravisCi --code-coverage && npm run build:prod -- --deploy-url /angular-ngrx-material-starter/ --base-href /angular-ngrx-material-starter",
       "format:write": "prettier projects/**/*.{ts,json,md,scss} --write",
       "format:test": "prettier projects/**/*.{ts,json,md,scss} --list-different",
       "release": "standard-version && git push --follow-tags origin master",
-      "analyze": "yarn run build:prod -- --stats-json && webpack-bundle-analyzer ./dist/angular-ngrx-material-starter/stats-es2015.json",
+      "analyze": "npm run build:prod -- --stats-json && webpack-bundle-analyzer ./dist/angular-ngrx-material-starter/stats-es2015.json",
       "server": "node ./projects/server/server.js",
       "contributors:add": "all-contributors add",
       "contributors:generate": "all-contributors generate && node .all-contributors-html.js",

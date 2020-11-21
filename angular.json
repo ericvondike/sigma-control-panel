@@ -16,7 +16,7 @@
       "prefix": "anms",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/custom-webpack:browser",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist",
             "index": "projects/angular-ngrx-material-starter/src/index.html",
@@ -38,10 +38,7 @@
               "./node_modules/jquery/dist/jquery.min.js",
               "./node_modules/@popperjs/core/dist/umd/popper.min.js",
               "./node_modules/bootstrap/dist/js/bootstrap.min.js"
-            ],
-            "customWebpackConfig": {
-              "path": "./angular.webpack.js"
-            }
+            ]
           },
           "configurations": {
             "production": {
