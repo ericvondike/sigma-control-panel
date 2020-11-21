@@ -1,4 +1,4 @@
-import { selectTodosFilter } from './../todos.selectors';
+import { selectTodosFilter } from '../todos.selectors';
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
