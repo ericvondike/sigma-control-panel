@@ -1,9 +1,9 @@
-$anms-nature-primary: mat-palette($mat-brown, 700, 300, 900);
-$anms-nature-accent: mat-palette($mat-deep-purple, 300);
-$anms-nature-warn: mat-palette($mat-red, 600);
+$sigma-nature-primary: mat-palette($mat-brown, 700, 300, 900);
+$sigma-nature-accent: mat-palette($mat-deep-purple, 300);
+$sigma-nature-warn: mat-palette($mat-red, 600);
 
-$anms-nature-theme: mat-light-theme(
-  $anms-nature-primary,
-  $anms-nature-accent,
-  $anms-nature-warn
+$sigma-nature-theme: mat-light-theme(
+  $sigma-nature-primary,
+  $sigma-nature-accent,
+  $sigma-nature-warn
 );

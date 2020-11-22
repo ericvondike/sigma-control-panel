@@ -13,7 +13,7 @@
           "style": "scss"
         }
       },
-      "prefix": "anms",
+      "prefix": "sigma",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
