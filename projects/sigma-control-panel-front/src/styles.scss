@@ -17,12 +17,12 @@
 @import './app/app/app.component.scss-theme';
 @import './app/shared/big-input/big-input/big-input.component.scss-theme';
 @import './app/features/home/home/home.component.scss-theme';
-@import './app/features/examples/notifications/components/notifications.component.scss-theme';
-@import './app/features/examples/todos/components/todos-container.component.scss-theme';
-@import './app/features/examples/stock-market/components/stock-market-container.component.scss-theme';
-@import './app/features/examples/theming/parent/parent.component.scss-theme';
-@import './app/features/examples/theming/child/child.component.scss-theme';
-@import './app/features/examples/examples/examples.component.scss-theme';
+@import './app/features/panel/notifications/components/notifications.component.scss-theme';
+@import './app/features/panel/todos/components/todos-container.component.scss-theme';
+@import './app/features/panel/stock-market/components/stock-market-container.component.scss-theme';
+@import './app/features/panel/theming/parent/parent.component.scss-theme';
+@import './app/features/panel/theming/child/child.component.scss-theme';
+@import './app/features/panel/panel/panel.component.scss-theme';
 
 @mixin custom-components-theme($theme) {
   @include sigma-styles-reset-theme($theme);
@@ -34,7 +34,7 @@
   @include sigma-stock-market-container-component-theme($theme);
   @include sigma-parent-component-theme($theme);
   @include sigma-child-component-theme($theme);
-  @include sigma-examples-component-theme($theme);
+  @include sigma-panel-component-theme($theme);
 }
 
 .default-theme {

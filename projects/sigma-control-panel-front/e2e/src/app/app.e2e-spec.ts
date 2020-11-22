@@ -17,12 +17,12 @@ describe('App', () => {
     expect(page.getCurrentYear()).toEqual(new Date().getFullYear().toString());
   });
 
-  it('should have "home", "Features", "Examples" menus', () => {
+  it('should have "home", "Features", "panel" menus', () => {
     page.navigateTo();
     page
       .getAllMenus()
       .then((menus) =>
-        expect(menus).toEqual(['home', 'Features', 'Examples'])
+        expect(menus).toEqual(['home', 'Features', 'panel'])
       );
   });
 });

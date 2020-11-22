@@ -39,7 +39,7 @@
   "sigma.footer.changelog": "Afficher le journal des changements",
   "sigma.header.github": "Dépot Github",
   "sigma.menu.home": "Accueil",
-  "sigma.menu.examples": "Exemples",
+  "sigma.menu.panel": "Panneau",
   "sigma.menu.features": "Fonctionnalités",
   "sigma.menu.login": "Connexion",
   "sigma.menu.logout": "Déconnexion",
@@ -67,6 +67,6 @@
   "sigma.settings.themes.sticky-header": "Entête fixe",
   "sigma.settings.themes.title": "Thèmes",
   "sigma.settings.title": "Paramètres",
-  "sigma.title.long": "Kit de démarrage Angular NgRx Material",
-  "sigma.title.short": "Kit de démarrage"
+  "sigma.title.long": "Panneau de Contrôle de Sigma",
+  "sigma.title.short": "Panneau de Contrôle"
 }

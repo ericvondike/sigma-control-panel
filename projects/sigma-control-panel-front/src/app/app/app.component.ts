@@ -36,7 +36,7 @@ export class AppComponent implements OnInit {
   navigation = [
     { link: 'home', label: 'sigma.menu.home' },
     { link: 'feature-list', label: 'sigma.menu.features' },
-    { link: 'examples', label: 'sigma.menu.examples' }
+    { link: 'panel', label: 'sigma.menu.panel' }
   ];
   navigationSideMenu = [
     ...this.navigation,

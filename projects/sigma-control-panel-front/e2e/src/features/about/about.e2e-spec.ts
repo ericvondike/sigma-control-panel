@@ -8,7 +8,7 @@ describe('home Page', () => {
 
   it('should display main heading', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('ANGULAR NGRX MATERIAL STARTER');
+    expect(page.getParagraphText()).toEqual('Sigma Control Panel');
   });
 
   it('should display "Geting Started" section', () => {

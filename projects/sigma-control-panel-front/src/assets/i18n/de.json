@@ -39,7 +39,7 @@
   "sigma.footer.changelog": "Changelog anzeigen",
   "sigma.header.github": "Projekt Github-Repository",
   "sigma.menu.home": "Startseite",
-  "sigma.menu.examples": "Beispiele",
+  "sigma.menu.panel": "Panel",
   "sigma.menu.features": "Eigenschaften",
   "sigma.menu.login": "Anmelden",
   "sigma.menu.logout": "Abmelden",
@@ -67,6 +67,6 @@
   "sigma.settings.themes.sticky-header": "",
   "sigma.settings.themes.title": "Thema",
   "sigma.settings.title": "Einstellungen",
-  "sigma.title.long": "Angular NgRx Material Vorlage",
-  "sigma.title.short": "Angular Vorlage"
+  "sigma.title.long": "Sigma Bedienfeld",
+  "sigma.title.short": "Bedienfeld"
 }
