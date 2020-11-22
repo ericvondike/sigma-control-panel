@@ -266,11 +266,11 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Bug Fixes
 
-- **about:** contributors layout ([5a9c78d](https://github.com/tomastrajan/sigma-control-panel-front/commit/5a9c78d))
+- **home:** contributors layout ([5a9c78d](https://github.com/tomastrajan/sigma-control-panel-front/commit/5a9c78d))
 
 ### Features
 
-- **about:** add contributor FabienDehopre ([96dd59f](https://github.com/tomastrajan/sigma-control-panel-front/commit/96dd59f))
+- **home:** add contributor FabienDehopre ([96dd59f](https://github.com/tomastrajan/sigma-control-panel-front/commit/96dd59f))
 - **i18n:** add french translations ([ad53353](https://github.com/tomastrajan/sigma-control-panel-front/commit/ad53353))
 
 <a name="6.7.0"></a>
@@ -297,7 +297,7 @@ All notable changes to this project will be documented in this file. See [standa
 ### Features
 
 - upgrade angular and ngrx deps ([211e041](https://github.com/tomastrajan/sigma-control-panel-front/commit/211e041))
-- **about:** add contributors section ([35d67a6](https://github.com/tomastrajan/sigma-control-panel-front/commit/35d67a6))
+- **home:** add contributors section ([35d67a6](https://github.com/tomastrajan/sigma-control-panel-front/commit/35d67a6))
 
 <a name="6.5.1"></a>
 
@@ -436,7 +436,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 - **build:** lint e2e tests ([fe55a82](https://github.com/mumairofficial/sigma-control-panel-front/commit/fe55a82))
 - **dependencies:** migrated to stable release of Angular 6.0.0 ([cb2d0ae](https://github.com/mumairofficial/sigma-control-panel-front/commit/cb2d0ae))
-- **e2e:** [#178](https://github.com/mumairofficial/sigma-control-panel-front/issues/178) add tests for app and about page ([31565c0](https://github.com/mumairofficial/sigma-control-panel-front/commit/31565c0))
+- **e2e:** [#178](https://github.com/mumairofficial/sigma-control-panel-front/issues/178) add tests for app and home page ([31565c0](https://github.com/mumairofficial/sigma-control-panel-front/commit/31565c0))
 
 <a name="6.0.0-rc.4"></a>
 
@@ -444,7 +444,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-- **about:** improve responsive layout and add release butler section ([3622801](https://github.com/tomastrajan/sigma-control-panel-front/commit/3622801))
+- **home:** improve responsive layout and add release butler section ([3622801](https://github.com/tomastrajan/sigma-control-panel-front/commit/3622801))
 - **dependencies:** bump angular, cli, material and rxjs versions, update angular.json ([1d363dd](https://github.com/tomastrajan/sigma-control-panel-front/commit/1d363dd))
 
 <a name="6.0.0-rc.3"></a>
@@ -587,7 +587,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 - **app:** enhance responsive layout ([2af20d2](https://github.com/tomastrajan/sigma-control-panel-front/commit/2af20d2))
 - **examples:** enhance responsivenes of submenu ([a22cd8e](https://github.com/tomastrajan/sigma-control-panel-front/commit/a22cd8e))
-- **static:** adjust about page content ([ead970c](https://github.com/tomastrajan/sigma-control-panel-front/commit/ead970c))
+- **static:** adjust home page content ([ead970c](https://github.com/tomastrajan/sigma-control-panel-front/commit/ead970c))
 
 <a name="1.27.1"></a>
 
@@ -900,7 +900,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Bug Fixes
 
-- about screen responsive layout ([9be673e](https://github.com/tomastrajan/sigma-control-panel-front/commit/9be673e))
+- home screen responsive layout ([9be673e](https://github.com/tomastrajan/sigma-control-panel-front/commit/9be673e))
 
 ### Features
 

@@ -4,7 +4,7 @@ We would love for you to contribute to starter project and help make it even bet
 today! As a contributor, here are the guidelines we would like you to follow:
 
 ## Getting started
-Please check out one of the getting started guides about GitHub fork / pull requests workflow:
+Please check out one of the getting started guides home GitHub fork / pull requests workflow:
 
   * [Forking project](https://guides.github.com/activities/forking/)
   * [Fork a repo](https://help.github.com/articles/fork-a-repo/)

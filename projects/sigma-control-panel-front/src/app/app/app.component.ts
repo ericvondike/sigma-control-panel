@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
   logo = require('../../assets/logo.png').default;
   languages = ['en', 'de', 'sk', 'fr', 'es', 'pt-br', 'zh-cn', 'he'];
   navigation = [
-    { link: 'about', label: 'sigma.menu.about' },
+    { link: 'home', label: 'sigma.menu.home' },
     { link: 'feature-list', label: 'sigma.menu.features' },
     { link: 'examples', label: 'sigma.menu.examples' }
   ];
