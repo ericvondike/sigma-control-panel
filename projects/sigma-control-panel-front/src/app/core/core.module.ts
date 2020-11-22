@@ -131,7 +131,7 @@ export function httpLoaderFactory(http: HttpClient) {
     environment.production
       ? []
       : StoreDevtoolsModule.instrument({
-          name: 'Angular NgRx Material Starter'
+          name: 'Sigma Control Panel'
         }),
 
     // 3rd party
