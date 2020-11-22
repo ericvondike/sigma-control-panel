@@ -4,6 +4,20 @@
       <h1 rtl class="main-heading">{{ 'sigma.features.title' | translate }}</h1>
     </div>
   </div>
+  <div class="col-md-6 col-lg-6" [ngClass]="routeAnimationsElements" style="margin: 0 auto; width: 100%">
+    <mat-card (click)="addNew()" class="clickable-card">
+      <mat-card-title>
+        <code><fa-icon icon="plus"></fa-icon></code>
+        Add New Feature</mat-card-title>
+      <mat-card-subtitle rtl>Add a new feature to sigma</mat-card-subtitle>
+      <mat-card-actions>
+      <a mat-button rel="noopener noreferrer" target="_blank">
+        <fa-icon icon="book"></fa-icon>{{ 'sigma.features.documentation' | translate }}
+      </a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
   <div class="row align-items-end">
     <div *ngFor="let feature of features" class="col-md-6 col-lg-4" [ngClass]="routeAnimationsElements">
       <mat-card>
