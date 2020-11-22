@@ -38,7 +38,7 @@
   "sigma.features.eslint": "ESLint is for identifying problematic patterns found in JavaScript and Typescript code",
   "sigma.footer.changelog": "Show changelog",
   "sigma.header.github": "Project Github Repository",
-  "sigma.menu.home": "home",
+  "sigma.menu.home": "Home",
   "sigma.menu.examples": "Examples",
   "sigma.menu.features": "Features",
   "sigma.menu.login": "Sign in",
