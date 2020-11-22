@@ -33,7 +33,7 @@
   "sigma.footer.changelog": "显示变更日志",
   "sigma.header.github": "项目 Github 代码仓库",
   "sigma.menu.home": "关于",
-  "sigma.menu.examples": "例子",
+  "sigma.menu.panel": "例子",
   "sigma.menu.features": "特性",
   "sigma.menu.login": "登录",
   "sigma.menu.logout": "退出",

@@ -27,10 +27,10 @@ const routes: Routes = [
       )
   },
   {
-    path: 'examples',
+    path: 'panel',
     loadChildren: () =>
-      import('./features/examples/examples.module').then(
-        (m) => m.ExamplesModule
+      import('./features/panel/panel.module').then(
+        (m) => m.PanelModule
       )
   },
   {

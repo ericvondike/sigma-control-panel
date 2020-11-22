@@ -39,7 +39,7 @@
   "sigma.footer.changelog": "Show changelog",
   "sigma.header.github": "Project Github Repository",
   "sigma.menu.home": "Home",
-  "sigma.menu.examples": "Examples",
+  "sigma.menu.panel": "Panel",
   "sigma.menu.features": "Features",
   "sigma.menu.login": "Sign in",
   "sigma.menu.logout": "Logout",
