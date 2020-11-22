@@ -43,6 +43,8 @@
   "sigma.panel.form.title": "Formulaire réactif avec un constructeur de formulaire",
   "sigma.panel.menu.auth": "Authentification",
   "sigma.panel.menu.crud": "CRUD",
+  "sigma.panel.menu.simple-state-management": "Simple State Management",
+  "sigma.panel.menu.elements": "Elements",
   "sigma.panel.menu.form": "Forme",
   "sigma.panel.menu.notifications": "Notifications",
   "sigma.panel.menu.stocks": "Stocks",

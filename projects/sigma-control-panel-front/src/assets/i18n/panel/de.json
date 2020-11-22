@@ -43,6 +43,8 @@
   "sigma.panel.form.title": "Reaktive Form mit einem Formularersteller",
   "sigma.panel.menu.auth": "Auth.",
   "sigma.panel.menu.crud": "CRUD",
+  "sigma.panel.menu.simple-state-management": "Simple State Management",
+  "sigma.panel.menu.elements": "Elements",
   "sigma.panel.menu.form": "Formular",
   "sigma.panel.menu.notifications": "Benachrichtigungen",
   "sigma.panel.menu.stocks": "Börse",

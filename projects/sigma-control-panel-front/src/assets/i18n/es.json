@@ -67,6 +67,6 @@
   "sigma.settings.themes.sticky-header": "",
   "sigma.settings.themes.title": "Temas",
   "sigma.settings.title": "Ajustes",
-  "sigma.title.long": "Angular NgRx Material Inicio",
-  "sigma.title.short": "Inicio en Angular"
+  "sigma.title.long": "Panel de control de Sigma",
+  "sigma.title.short": "Panel de control"
 }
