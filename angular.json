@@ -183,7 +183,9 @@
               "projects/sigma-control-panel-front/tsconfig.spec.json",
               "projects/sigma-control-panel-front/e2e/tsconfig.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "e2e": {
@@ -212,6 +214,7 @@
     }
   },
   "cli": {
-    "analytics": false
+    "analytics": false,
+    "defaultCollection": "@ngrx/schematics"
   }
 }
