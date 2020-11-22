@@ -1,8 +1,8 @@
 import { browser, by, element } from 'protractor';
 
-export class AboutPage {
+export class homePage {
   navigateTo() {
-    return browser.get('/about');
+    return browser.get('/home');
   }
 
   getParagraphText() {
