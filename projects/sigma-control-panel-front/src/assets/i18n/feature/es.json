@@ -1,0 +1,20 @@
+{
+  "sigma.features.angular": "framework moderno y poderoso",
+  "sigma.features.angular-cli": "Una interfaz de línea de comando para Angular",
+  "sigma.features.angular-material": "Librería de componentes de Material design",
+  "sigma.features.bootstrap": "Diseño receptivo de la librería de IU probada en batalla más famosa del mundo",
+  "sigma.features.cypress": "Cypress es una herramienta de testeo de última generación construida para la web moderna.",
+  "sigma.features.documentation": "Docs",
+  "sigma.features.fontawesome": "Iconos vectoriales fáciles de usar y logos sociales",
+  "sigma.features.guide": "Guía",
+  "sigma.features.lazyloading.description": "Tiempo de inicio más rápido con módulos de funciones cargadas perezosas",
+  "sigma.features.lazyloading.title": "Carga perezosa",
+  "sigma.features.ngrx": "Flujo de datos unidireccional impulsado por Observables RxJS",
+  "sigma.features.ngxtranslate": "Una librería de internacionalización para Angular",
+  "sigma.features.rxjs": "Programación reactiva con colecciones asíncronas utlilizando Observables",
+  "sigma.features.themes.description": "Soporte flexible de tematización para componentes proporcionados y personalizados",
+  "sigma.features.themes.title": "Temas",
+  "sigma.features.title": "Características",
+  "sigma.features.typescript": "Experiencia superior de desarrollador, completado de código, refactorización y menos errores",
+  "sigma.features.eslint": "ESLint es para identificar patrones problemáticos encontrados en código JavaScript y TypeScript"
+}

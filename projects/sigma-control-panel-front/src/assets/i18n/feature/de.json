@@ -1,0 +1,20 @@
+{
+  "sigma.features.angular": "Modernes und leistungsfähiges Framework",
+  "sigma.features.angular-cli": "Eine Befehlszeilenschnittstelle für Angular",
+  "sigma.features.angular-material": "Material Design-Komponente",
+  "sigma.features.bootstrap": "Responsives Layout von der weltbekannten UI-Bibliothek",
+  "sigma.features.cypress": "Cypress ist ein Frontend-Testwerkzeug der nächsten Generation, das für das moderne Web entwickelt wurde.",
+  "sigma.features.documentation": "Doku",
+  "sigma.features.fontawesome": "Einfach zu bedienende Vektor-Icons und soziale Logos",
+  "sigma.features.guide": "Anleitung",
+  "sigma.features.lazyloading.description": "Schnellere Startzeit mit Lazy Loaded Feature-Modulen",
+  "sigma.features.lazyloading.title": "Lazy Loading",
+  "sigma.features.ngrx": "Einweg-Datenfluss unterstützt von RxJS Observables",
+  "sigma.features.ngxtranslate": "Eine Internationalisierungsbibliothek für Angular",
+  "sigma.features.rxjs": "Reaktive Programmierung mit Async-Sammlungen unter Verwendung von Observablen",
+  "sigma.features.themes.description": "Flexible Theming-Unterstützung für bereitgestellte und benutzerdefinierte Komponenten.",
+  "sigma.features.themes.title": "Themen",
+  "sigma.features.title": "Features",
+  "sigma.features.typescript": "Überlegene Entwickler Erfahrung, Code-Vervollständigung, Refaktorierung und weniger Bugs",
+  "sigma.features.eslint": "ESLint dient zur Identifizierung problematischer Muster in JavaScript- und Typescript-Code"
+}

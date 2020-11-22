@@ -1,0 +1,18 @@
+{
+  "sigma.features.angular": "Modern powerful framework",
+  "sigma.features.angular-cli": "A command line interface for Angular",
+  "sigma.features.angular-material": "Material design component library",
+  "sigma.features.bootstrap": "Responsive layout from battle tested, world most famous UI library",
+  "sigma.features.cypress": "Cypress is a next generation front end testing tool built for the modern web.",
+  "sigma.features.documentation": "Docs",
+  "sigma.features.fontawesome": "Easy to use vector icons and social logos",
+  "sigma.features.guide": "Guide",
+  "sigma.features.lazyloading.description": "Faster startup time with lazy loaded feature modules",
+  "sigma.features.lazyloading.title": "Lazy loading",
+  "sigma.features.ngrx": "One way data flow powered by RxJS Observables",
+  "sigma.features.ngxtranslate": "An internationalization library for Angular",
+  "sigma.features.rxjs": "Reactive programming with async collections using Observables",
+  "sigma.features.themes.description": "Flexible theming support for provided and custom components",
+  "sigma.features.themes.title": "Themes",
+  "sigma.features.title": "Features"
+}
