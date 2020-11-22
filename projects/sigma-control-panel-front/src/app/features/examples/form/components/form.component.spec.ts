@@ -30,12 +30,12 @@ describe('FormComponent', () => {
 
   const getSaveButton = () =>
     loader.getHarness(
-      MatButtonHarness.with({ text: 'anms.examples.form.save' })
+      MatButtonHarness.with({ text: 'sigma.examples.form.save' })
     );
 
   const getResetButton = async () =>
     loader.getHarness(
-      MatButtonHarness.with({ text: 'anms.examples.form.reset' })
+      MatButtonHarness.with({ text: 'sigma.examples.form.reset' })
     );
 
   beforeEach(async () => {
