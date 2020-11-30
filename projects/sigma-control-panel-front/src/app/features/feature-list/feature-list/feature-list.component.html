@@ -4,8 +4,8 @@
       <h1 rtl class="main-heading">{{ 'sigma.features.title' | translate }}</h1>
     </div>
   </div>
-  <div class="col-md-6 col-lg-6" [ngClass]="routeAnimationsElements" style="margin: 0 auto; width: 100%">
-    <mat-card (click)="addNew()" class="clickable-card">
+  <!-- <div class="col-md-6 col-lg-6" [ngClass]="routeAnimationsElements" style="margin: 0 auto; width: 100%">
+    <mat-card (click)="testTransition()" class="clickable-card">
       <mat-card-title>
         <code><fa-icon icon="plus"></fa-icon></code>
         Add New Feature</mat-card-title>
@@ -17,7 +17,36 @@
       </mat-card-actions>
     </mat-card>
   </div>
-
+  <div [@flyInOut]="isEditing ? true : false">
+    <mat-accordion class="p-5">
+      <mat-expansion-panel
+        (opened)="panelOpenState === true"
+        (closed)="panelOpenState === false"
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title> Add new Language </mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-card class="p-5">
+          <mat-card-title class="mb-2">Add new Language</mat-card-title>
+          <mat-card-content>
+            <mat-form-field appearance="fill" class="language-field">
+              <mat-label>Language Code</mat-label>
+              <input matInput />
+            </mat-form-field>
+            <mat-form-field appearance="fill" class="language-field">
+              <mat-label>Language Name</mat-label>
+              <input matInput />
+            </mat-form-field>
+          </mat-card-content>
+          <mat-card-actions class="actions" flex>
+            <button mat-raised-button id="addLanguageButton" type="button">
+              <mat-icon class="material-icons">add</mat-icon>
+            </button>
+          </mat-card-actions>
+        </mat-card>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div> -->
   <div class="row align-items-end">
     <div *ngFor="let feature of features" class="col-md-6 col-lg-4" [ngClass]="routeAnimationsElements">
       <mat-card>
@@ -28,6 +57,9 @@
           {{ feature.description | translate }}
         </mat-card-subtitle>
         <mat-card-actions>
+          <a *ngIf="feature.address" mat-icon-button [routerLink]="feature.address" rel="noopener noreferrer" target="_blank">
+            <fa-icon [icon]="['fas','address-book']"></fa-icon>
+          </a>
           <a *ngIf="feature.github" mat-icon-button [href]="feature.github" rel="noopener noreferrer" target="_blank">
             <fa-icon [icon]="['fab','github']"></fa-icon>
           </a>

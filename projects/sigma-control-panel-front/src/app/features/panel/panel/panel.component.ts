@@ -24,6 +24,7 @@ export class PanelComponent implements OnInit {
     { link: 'stock-market', label: 'sigma.panel.menu.stocks' },
     { link: 'theming', label: 'sigma.panel.menu.theming' },
     { link: 'crud', label: 'sigma.panel.menu.crud' },
+    {link: 'address', label: 'sigma.panel.menu.address'},
     {
       link: 'simple-state-management',
       label: 'sigma.panel.menu.simple-state-management'

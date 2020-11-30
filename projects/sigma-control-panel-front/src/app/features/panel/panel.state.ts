@@ -10,6 +10,8 @@ import { bookReducer } from './crud/books.reducer';
 import { formReducer } from './form/form.reducer';
 import { FormState } from './form/form.model';
 import { BookState } from './crud/books.model';
+import { AddressUsageTypeState } from './models/address-usage-type.model';
+import { addressUsageTypeReducer } from './address/address-usage-types.reducer';
 
 export const FEATURE_NAME = 'panel';
 export const selectpanel = createFeatureSelector<State, PanelState>(
@@ -19,7 +21,8 @@ export const reducers: ActionReducerMap<PanelState> = {
   todos: todosReducer,
   stocks: stockMarketReducer,
   books: bookReducer,
-  form: formReducer
+  form: formReducer,
+  addressUsageTypes: addressUsageTypeReducer,
 };
 
 export interface PanelState {
@@ -27,6 +30,7 @@ export interface PanelState {
   stocks: StockMarketState;
   form: FormState;
   books: BookState;
+  addressUsageTypes: AddressUsageTypeState
 }
 
 export interface State extends AppState {

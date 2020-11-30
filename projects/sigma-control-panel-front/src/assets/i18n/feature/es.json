@@ -1,4 +1,6 @@
 {
+  "sigma.features.address.name": "Habla a",
+  "sigma.features.address.description": "Agregar o quitar direcciones y / o sus especificaciones",
   "sigma.features.angular": "framework moderno y poderoso",
   "sigma.features.angular-cli": "Una interfaz de línea de comando para Angular",
   "sigma.features.angular-material": "Librería de componentes de Material design",

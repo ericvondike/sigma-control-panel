@@ -4,6 +4,16 @@ import { FormBuilder } from '@angular/forms'
 import { Router } from '@angular/router';
 import { Store, select } from '@ngrx/store';
 import { Observable } from 'rxjs';
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition,
+  query,
+  stagger,
+  // ...
+} from '@angular/animations';
 
 import { ROUTE_ANIMATIONS_ELEMENTS } from '../../../core/core.module';
 
@@ -18,17 +28,25 @@ import { selectSelectedFeature, selectAllFeatures } from '../feature.selectors';
   selector: 'sigma-feature-list',
   templateUrl: './feature-list.component.html',
   styleUrls: ['./feature-list.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  animations: [
+    trigger('flyInOut', [
+      state('true', style({ transform: 'translateX(0)', opacity: 1 })),
+      state('false', style({ transform: 'translateX(100%)', opacity: 0})),
+      transition('false <=> true', animate(500)),
+    ]),
+  ]
 })
 export class FeatureListComponent implements OnInit {
   routeAnimationsElements = ROUTE_ANIMATIONS_ELEMENTS;
   features: Feature[] = features;
+  panelOpenState: boolean;
 
   featuresFormGroup = this.fb.group(FeatureListComponent.createFeatur());
   features$: Observable<FeatureModel[]> = this.store.pipe(select(selectAllFeatures));
   selectedFeature$: Observable<FeatureModel> = this.store.pipe(select(selectSelectedFeature));
 
-  isEditing: boolean;
+  public isEditing: boolean;
 
   constructor(
     public store: Store<State>,
@@ -90,5 +108,10 @@ export class FeatureListComponent implements OnInit {
       this.isEditing = false;
       this.router.navigate(['feature-list']);
     }
+  }
+
+  testTransition() {
+    this.isEditing = !this.isEditing;
+    if (!this.isEditing) this.panelOpenState = false;
   }
 }

@@ -13,6 +13,7 @@ import { FormComponent } from './form/components/form.component';
 import { NotificationsComponent } from './notifications/components/notifications.component';
 import { UserComponent } from './simple-state-management/components/user.component';
 import { ElementsComponent } from './elements/elements.component';
+import { AddressComponent } from './address/components/address.component';
 
 const routes: Routes = [
   {
@@ -48,6 +49,16 @@ const routes: Routes = [
         path: 'crud/:id',
         component: CrudComponent,
         data: { title: 'sigma.panel.menu.crud' }
+      },
+      {
+        path: 'address',
+        redirectTo: 'address/',
+        pathMatch: 'full'
+      },
+      {
+        path: 'address/:id',
+        component: AddressComponent,
+        data: { title: 'sigma.panel.menu.address' }
       },
       {
         path: 'simple-state-management',

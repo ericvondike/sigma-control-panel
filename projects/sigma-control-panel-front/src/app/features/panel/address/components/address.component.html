@@ -1,0 +1,102 @@
+<div class="container" rtl>
+  <h1>{{ 'sigma.panel.address.title' | translate }}</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <h2>{{ 'sigma.panel.address.subtitle1' | translate }}</h2>
+      <mat-card *ngFor="let addressUsageType of addressUsageTypes$ | async" [ngClass]="routeAnimationsElements"
+        (click)="select(addressUsageType)">
+        <h3>{{addressUsageType.code}}</h3>
+        <small>{{addressUsageType.label}}</small>
+      </mat-card>
+      <p *ngIf="(addressUsageTypes$ | async)?.length === 0">{{'sigma.panel.address-usage-type.empty' | translate}}</p>
+      <button type="button" mat-fab color="primary" class="add" [ngClass]="routeAnimationsElements"
+        *ngIf="!isEditing" (click)="addNew()">
+        <fa-icon icon="plus"></fa-icon>
+      </button>
+    </div>
+    <div class="col-md-6">
+      <span class="d-flex justify-content-between">
+        <h2>{{ 'sigma.panel.address.subtitle2' | translate }}</h2>
+        <span class="d-flex justify-content-end">
+          <span *ngIf="selectedAddressUsageType$ | async as selectedAddressUsageType">
+            <button mat-icon-button color="accent" *ngIf="!isEditing">
+              <fa-icon icon="edit" (click)="edit(selectedAddressUsageType)" [matTooltip]="'sigma.panel.address.tooltip.edit' | translate"
+                matTooltipPosition="above">
+              </fa-icon>
+            </button>
+            <button mat-icon-button color="warn" (click)="delete(selectedAddressUsageType)">
+              <fa-icon icon="trash" [matTooltip]="'sigma.panel.address.tooltip.delete' | translate"
+                matTooltipPosition="above">
+              </fa-icon>
+            </button>
+            <button mat-icon-button (click)="deselect()">
+              <fa-icon icon="times" [matTooltip]="'sigma.panel.address.tooltip.deselect' | translate"
+                matTooltipPosition="above">
+              </fa-icon>
+            </button>
+          </span>
+        </span>
+      </span>
+
+      <form [formGroup]="addressUsageTypeFormGroup" [style.display]="isEditing ? 'block' : 'none'"
+        [ngClass]="routeAnimationsElements">
+        <div class="row">
+          <mat-form-field class="col">
+            <input matInput placeholder="{{ 'sigma.panel.address.placeholder1' | translate }}"
+              formControlName="code" required autofocus>
+            <mat-error *ngIf="addressUsageTypeFormGroup.get('code').invalid">
+              {{ 'sigma.panel.address.placeholder1' | translate }}
+              {{ 'sigma.panel.address.error' | translate }}
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="row">
+          <mat-form-field class="col">
+            <input matInput placeholder="{{ 'sigma.panel.address.placeholder2' | translate }}"
+              formControlName="label" required>
+            <mat-error *ngIf="addressUsageTypeFormGroup.get('label').hasError('required')">
+              {{ 'sigma.panel.address.placeholder2' | translate }}
+              {{ 'sigma.panel.address.error' | translate }}
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="row">
+          <mat-form-field class="col">
+            <textarea matInput placeholder="{{ 'sigma.panel.address.placeholder3' | translate }}"
+              formControlName="description" rows="5"></textarea>
+            <mat-error *ngIf="addressUsageTypeFormGroup.get('description').invalid">
+              {{ 'sigma.panel.address.placeholder1' | translate }}
+              {{ 'sigma.panel.address.error' | translate }}
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="row">
+          <div class="col-12 d-flex justify-content-between">
+            <button (click)="save()" mat-raised-button color="primary">
+              {{'sigma.panel.address.save' | translate }}
+            </button>
+            <button (click)="cancelEditing()" mat-raised-button>
+              {{'sigma.panel.address.cancel' | translate }}
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <ng-container *ngIf="!isEditing">
+        <div [ngClass]="routeAnimationsElements" *ngIf="selectedAddressUsageType$ | async as selectedAddressUsageType; else noSeletctedAddresUsageTypeTmpl">
+          <h3>{{ selectedAddressUsageType.code }}</h3>
+          <mat-divider></mat-divider>
+          <p>{{ selectedAddressUsageType.label }}</p>
+          <i>{{ selectedAddressUsageType.description}}</i>
+        </div>
+
+        <ng-template #noSeletctedAddresUsageTypeTmpl>
+          <p [ngClass]="routeAnimationsElements">
+            {{'sigma.panel.address.text' | translate }}
+          </p>
+        </ng-template>
+      </ng-container>
+
+    </div>
+  </div>
+</div>

@@ -8,7 +8,7 @@ const routes: Routes = [
     path: '',
     component: FeatureListComponent,
     data: { title: 'sigma.menu.features' }
-  }
+  },
 ];
 
 @NgModule({

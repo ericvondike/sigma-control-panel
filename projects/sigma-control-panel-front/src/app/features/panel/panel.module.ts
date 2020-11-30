@@ -14,6 +14,7 @@ import { PanelRoutingModule } from './panel-routing.module';
 import { PanelComponent } from './panel/panel.component';
 import { TodosContainerComponent } from './todos/components/todos-container.component';
 import { TodosEffects } from './todos/todos.effects';
+import { AddressUsageTypesEffects } from './address/address-usage-types.effects';
 import { StockMarketContainerComponent } from './stock-market/components/stock-market-container.component';
 import { StockMarketEffects } from './stock-market/stock-market.effects';
 import { StockMarketService } from './stock-market/stock-market.service';
@@ -29,6 +30,7 @@ import { PanelEffects } from './panel.effects';
 import { UserComponent } from './simple-state-management/components/user.component';
 import { UserService } from './simple-state-management/user.service';
 import { ElementsComponent } from './elements/elements.component';
+import { AddressComponent } from './address/components/address.component';
 
 export function httpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(
@@ -58,7 +60,8 @@ export function httpLoaderFactory(http: HttpClient) {
       TodosEffects,
       StockMarketEffects,
       BooksEffects,
-      FormEffects
+      FormEffects,
+      AddressUsageTypesEffects
     ])
   ],
   declarations: [
@@ -72,7 +75,8 @@ export function httpLoaderFactory(http: HttpClient) {
     FormComponent,
     NotificationsComponent,
     UserComponent,
-    ElementsComponent
+    ElementsComponent,
+    AddressComponent,
   ],
   providers: [StockMarketService, UserService]
 })

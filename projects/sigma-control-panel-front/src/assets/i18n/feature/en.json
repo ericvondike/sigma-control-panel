@@ -1,4 +1,6 @@
 {
+  "sigma.features.address.name": "Address",
+  "sigma.features.address.description": "Add or Remove Addresses and/or their Specifications",
   "sigma.features.angular": "Modern powerful framework",
   "sigma.features.angular-cli": "A command line interface for Angular",
   "sigma.features.angular-material": "Material design component library",

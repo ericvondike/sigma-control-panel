@@ -4,12 +4,19 @@ export interface Feature {
   name: string;
   version?: string;
   description: string;
+  address?: string,
   github?: string;
   documentation: string;
   medium?: string;
 }
 
 export const features: Feature[] = [
+  {
+    name: 'sigma.features.address.name',
+    description: 'sigma.features.address.description',
+    address: '../panel/address',
+    documentation: 'https://angular.io/docs/ts/latest/'
+  },
   {
     name: 'Angular',
     version: env.versions.angular,

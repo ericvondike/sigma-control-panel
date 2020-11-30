@@ -1,3 +1,4 @@
+import { HighContrastMode } from '@angular/cdk/a11y';
 import { Injectable } from '@angular/core';
 
 const APP_PREFIX = 'sigma-';
@@ -5,7 +6,8 @@ const APP_PREFIX = 'sigma-';
 @Injectable({
   providedIn: 'root'
 })
-export class LocalStorageService {
+export class
+LocalStorageService {
   constructor() {}
 
   static loadInitialState() {
@@ -40,6 +42,7 @@ export class LocalStorageService {
   }
 
   setItem(key: string, value: any) {
+    console.log(`The value: ${JSON.stringify(value)}`);
     localStorage.setItem(`${APP_PREFIX}${key}`, JSON.stringify(value));
   }
 
